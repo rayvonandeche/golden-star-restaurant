@@ -1,0 +1,40 @@
+.checkout-items{
+    padding-bottom: 100px;
+}
+.totals{
+    background-color: rgb(34, 34, 34);
+    color: white;
+    display: flex;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+}
+.tot{
+    flex: 1;
+}
+.pay{
+    font-family: Kanit;
+    background-color: #ff7d27;
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 18px;
+    margin-right: 2em;
+}
+.totals p{
+    font-family: Kanit;
+    flex-grow: auto;
+}
+.totals p:first-child{
+    font-size: 24px;
+}
+.totals p:last-child{
+    font-size: 30px;
+    color: #ff7d27;
+}

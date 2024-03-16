@@ -1,0 +1,57 @@
+.item-card{
+    width: 160px;
+    background-color: #0000004b;
+    overflow: hidden;
+    border:'1px solid #31363cef';
+    border-radius: 10px;
+    box-shadow: 0 1px 7px 1px #0000007a;
+    margin: auto;
+}
+.item-card img{
+    width: 160px; 
+}
+.item-card-txt{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1px 10px 8px;
+}
+.item-card-txt .item-name img{
+    width: 20px;
+}
+.item-card-txt .item-name img:active{
+    transform: scale(1.4);
+}
+.item-card-txt .item-name{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-family: Delius Unicase;
+}
+.item-card-txt .item-price{
+    color: #C84F00;
+}
+.item-card-txt .item-price span{
+    font-weight: 600;
+}
+
+.item-card-txt .item-price, .item-desc {
+    font-family: Outfit;
+    /* margin-bottom: 5px; */
+}
+.item-card-txt .item-desc{
+    font-weight: 100;   
+    font-size: 11px;
+}
+@media (min-width: 426px){
+    .item-card{
+        width: 220px;
+        margin: auto;
+    }
+    .item-card img{
+        width: 220px;
+    }
+    .item-card-txt .item-name img{
+        width: 25px;
+    }
+}

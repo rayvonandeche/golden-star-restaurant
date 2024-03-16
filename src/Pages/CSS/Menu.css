@@ -1,0 +1,121 @@
+.menu-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    gap: 10px;
+    top: 0;
+    left: 0;
+
+}
+.menu-nav input{
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.459);
+    border: none;
+    height: 30px;
+    border-radius: 25px ;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.menu-nav p{
+    color: white;
+    font-family: Madimi One;
+    font-size: 40px;
+    font-weight: 500;
+    flex: 1;
+
+}
+.menu-nav img{
+    width: 30px;
+}
+.menu-categories{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    overflow: scroll;
+    scrollbar-width: none;
+    padding: 0 20px;
+    gap: 15px;
+}
+.menu-categories p hr{
+    width: 100%;
+    animation-name: line;
+    animation-duration: 0.3s;
+}
+@keyframes line{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+.menu-categories p{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    white-space: nowrap;
+    font-family: Kanit;
+    font-weight: 300;
+}
+
+.menu-items{
+    overflow: scroll;
+    scrollbar-width: none;
+    padding: 20px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 70px;
+    
+
+}
+
+.menu-checkout{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #242424;
+    color: #fff;
+    font-family: Madimi One;
+    text-align: center;
+    padding: 10px 0;
+    justify-content: center;
+    display: flex;
+}
+.checkout{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: #C84F00;
+    width: fit-content;
+    border-radius: 30px;
+}
+.checkout-txt{
+    font-size: 25px;
+}
+.chekcot-num{
+    font-size: 25px;
+    background-color: white;
+    padding: 0 9px;
+    margin-left: 3px;
+    border-radius: 50%;
+    color: #C84F00;
+}
+@media (min-width: 426px) {
+    .menu-items{
+        grid-template-columns: 1fr 1fr ;
+        
+    }
+}
+@media (min-width: 768px) {
+    .menu-items{
+        grid-template-columns: 1fr 1fr 1fr;
+        
+    }
+}

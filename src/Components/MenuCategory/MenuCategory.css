@@ -1,0 +1,17 @@
+.menu-category{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 10em auto;
+    gap: 10px;
+    transition: all 0.5s;
+    max-width: 90vw;
+}
+
+@media (min-width:425px){
+    .menu-category{
+        grid-template-columns: repeat(4, 1fr) ;
+        /* padding: 0 0 100vh 75px; */
+        gap: 10px;
+        max-width: 90vw;
+    } 
+}

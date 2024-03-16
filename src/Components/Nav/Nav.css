@@ -1,0 +1,27 @@
+.nav{
+    background-image: url("../../assets/pexels-ella-olsson-1640772.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0 1px 5px 3px #00000071;
+}
+.logo img{
+    width: 60px;
+    animation: rotateimg 6s infinite linear;
+    margin-left: 3px;
+}
+.nav .logo-txt{
+    font-family: Vidaloka;
+    color: rgb(253, 253, 253);
+    font-size: 25px;
+}
+@keyframes rotateimg {
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

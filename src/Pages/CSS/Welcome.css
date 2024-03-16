@@ -1,0 +1,126 @@
+.container{
+    background-image: linear-gradient(75deg,#2b1f1aad,#31363C);
+    height: 100vh;
+    
+}
+.welcome-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.welcome-text img{
+    width: 100%;
+    border-radius: 0 0 45px 45px;
+    box-shadow: 0 1px 10px 5px #00000054;
+    /* filter: blur(1px); */
+}
+.welcome-text .welcomes{
+    position: absolute;
+    left: 20px;
+    color: white;
+    font-size: 50px;
+    font-family: Carter One;
+}
+.row{
+    position: relative;
+    margin-top: -95px;
+    margin-left: 2px;
+    display: flex;
+    align-items: center;
+}
+.row img{
+    width: 90px;
+    animation: imgrotate 10s infinite linear ;
+}
+.row p{
+    font-family: Vidaloka ;
+    color: white;
+    font-size: 30px;
+
+}
+.container-table{
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    box-shadow: 0px 1px 10px 1px #00000077 ;
+    padding: 0 5px 5px 5px;
+    border-radius: 10px;
+    gap: 15px;
+    background-image: linear-gradient(135deg, #3b3b3b21,#ffab4a13, #ffffff2d);
+}
+.container-table .txt{
+    font-family: Kanit;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 200;
+    padding: 0 6px;
+}
+.table-no{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 15px 15px 15px;
+    gap: 10px;
+}
+.enter-table{
+    background-color: #11050470;
+    width: 190px;
+    height:30px;
+    padding: 5px;
+    border-radius: 10px;
+    font-family: 'Delius Unicase';
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    box-shadow: 0px 1px 5px 1px #00000013 ;
+}
+.table-no input:first-child{
+    opacity: 0.5;
+    width: 200px;
+    height:30px;
+    border-radius: 10px;
+    font-family: Kanit;
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    border: 1px solid white;
+    margin-bottom: 10px;
+}
+
+.table-no input:last-child{
+    background-color: #C84F00;
+    width: 200px;
+    height:30px;
+    padding: 5px;
+    border-radius: 10px;
+    font-family: 'Delius Unicase';
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    border: none;
+    justify-content: center;
+    color: white;
+    box-shadow: 0px 3px 6px 1px #00000073 ;
+}
+@keyframes imgrotate {
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@media (min-width: 425px ){
+    .welcome-text .welcomes{
+        font-size: 80px;
+    }
+    .row p{
+        font-size: 40px;
+    }
+}

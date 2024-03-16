@@ -1,0 +1,60 @@
+body{
+    height: 100vh;
+}
+
+.checkout-item{
+    overflow: hidden;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.411);
+    margin: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.281);
+    border-radius: 12px;
+    box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.37);
+    height: 100px;
+    justify-content: space-between;
+}
+.checkout-item img{
+    width: 100px;
+
+}
+.checkout-desc{
+    margin: 10px;
+    flex-grow: 4;
+}
+.checkout-name{
+    color: white;
+    font-family: Madimi One;
+    font-size: 20px;
+    flex: 1;
+}
+.checkout-price, 
+.checkout-total{
+    color: white;
+    font-family: Kanit;
+}
+.checkout-total{
+    font-weight: 600;
+    font-size: 20px;
+    color: #FF8436;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    color: white;
+    flex: 1;
+}
+.icons p{
+    font-size: 25px;
+}
+.icons img{
+    width: 41px;
+}
+@media (max-width: 400px) {
+    .checkout-name{
+        white-space: nowrap;
+        overflow: hidden;
+        width: 160px ;
+    }
+}

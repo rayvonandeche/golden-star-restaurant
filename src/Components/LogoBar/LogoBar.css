@@ -1,0 +1,17 @@
+.container{
+    background-image: linear-gradient(75deg,#2b1f1aad,#31363C);
+    height: 100vh;
+    
+}
+.welcome-text{
+   position: relative;
+   transition: all 0.3s ease;
+}
+.row img{
+    animation:none;
+}
+.row{
+    transition: all 0.5s ease;
+    max-height: 200px;
+}
+

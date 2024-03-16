@@ -1,0 +1,27 @@
+.category-card{
+    /* margin-top: 9em; */
+    /* margin-left: 20px; */
+    background-image: linear-gradient(135deg, #c8500033, #7a3100b7);
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ffffff4f;
+    margin: auto;
+}
+.category-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.category-icon img{
+    width: 40px;
+    padding: 0;
+    margin: 0;
+}
+.category-icon p{
+    color: white;
+    font-size: 15px;
+    font-family: Madimi One;
+}
