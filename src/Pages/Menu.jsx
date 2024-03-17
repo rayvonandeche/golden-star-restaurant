@@ -18,7 +18,7 @@ function Menu() {
 
   const [search_letter, setSearch_letter] = useState("")
 
-  const { totalUniqueItems, isEmpty } = useCart()
+  const { totalUniqueItems, isEmpty, emptyCart } = useCart()
 
   const { all_items } = useContext(MyContext)
 
@@ -33,7 +33,7 @@ function Menu() {
         <img onClick={() => { navigate(-1) }} className="back" src={left_arrow} alt="" />
         {!search ? <p>Menu</p> : <input type="search" onChange={handleSearch}/>}
         <img onClick={() => { setSearch(prev => !prev) }} className='search' src={search_icon} alt="" />
-        <img className="exit" src={exit_icon} alt="" onClick={() => { navigate("/") }} />
+        <img className="exit" src={exit_icon} alt="" onClick={() => { navigate("/"); emptyCart() }} />
 
       </header>
       <div className="menu-categories">
