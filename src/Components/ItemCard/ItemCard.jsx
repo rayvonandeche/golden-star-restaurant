@@ -4,6 +4,7 @@ import '../ItemCard/ItemCard.css'
 import add_icon from '../../assets/add-ellipse-svgrepo-com.svg'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import default_img from '../../assets/logo.png'
 
 function ItemCard(props) {
 
@@ -44,6 +45,10 @@ function ItemCard(props) {
         </div>}
     </>
   )
+}
+
+ItemCard.defaultProps = {
+  image: default_img
 }
 
 export default ItemCard
